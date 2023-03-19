@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom</title>
+    <link rel="stylesheet" href="Custom.css">
+</head>
+<body>
+    <div class="Container">
+        <nav>
+            <ul id="ul1">
+                <li><a href="/Project/Project.html">Home</a></li>
+                <li><a href="/Project/Custom/Custom.html">Custom</a></li>
+            </ul>
+
+            <ul id="ul2">
+                <li><a id="login"  href="/Project/Login/Login.html">Login</a></li>
+                <li><a id="signup" href="/Project/Sign up/Sign up.html">Signup</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="Content">
+        <p class="Title">Customize</p>
+        <div class="content">
+            <div class="Cus_space">
+                <div class="Cake">
+                    <div class="con">
+                        <div class="topping" id="T1"></div>
+                        <div class="topping" id="T2"></div>
+                        <div class="topping" id="T3"></div>
+                    </div>
+                    <div class="text"></div>
+                    <div class="con">
+                        <div class="topping" id="T4"></div>
+                        <div class="topping" id="T5"></div>
+                        <div class="topping" id="T6"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="setting">
+                <p>Color:</p>
+                <div class="cake_color">
+                    <div onclick="set_pink()" class="set_color" id="pink"></div>
+                    <div onclick="set_red()" class="set_color" id="red"></div>
+                    <div onclick="set_purple()" class="set_color" id="purple"></div>
+                    <div onclick="set_blue()" class="set_color" id="blue"></div>
+                    <div onclick="set_green()" class="set_color" id="green"></div>
+                    <div onclick="set_yellow()" class="set_color" id="yellow"></div>
+                </div>
+                <p>Shape:</p>
+                <div class="cake_shape">
+                    <div onclick="sqr()" class="shape_choice sqr_shape">Square</div>
+                    <div onclick="rnd()" class="shape_choice rnd_shape">Circle</div>
+                </div>
+                <div class="cake_topping">
+                    <p>Topping:</p>
+                    <div id="con1">
+                        <div onclick="strawberry()" class="cake_choice" id="strawberry">Strawberry</div>
+                        <div onclick="gingerbread()" class="cake_choice" id="gingerbread">Gingerbread</div>
+                    </div>
+                    <div id="con2">
+                        <div onclick="pine()" class="cake_choice" id="pine">Pine</div>
+                        <div onclick="lemon()" class="cake_choice" id="lemon">Lemon</div>
+                    </div>
+                </div>
+                <div class="cake_text">
+                    <p>Text:</p>
+                    <input onchange="change_text()" id="set_text" type="text">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Custom.js"></script>
+</body>
+</html>

@@ -1,17 +1,52 @@
-var account = document.getElementById("in1").value
-var title = document.getElementsByTagName("title")
-var num = document.getElementById("Num")
-var in1 = document.getElementById("in1")
-var password = document.getElementById("in3").innerText
-var but1 = document.getElementById("bu1")
-var but2 = document.getElementById("b2")
-var f1 = document.getElementById("f1")
-var f2 = document.getElementById("f2")
-
-f1.style.display = "flex"
-f2.style.display = "none"
-
-function change(){
-    f1.style.display = "none"
-    f2.style.display = "flex"
+let userNow = {
+    id: 0,
+    userName: '',
+    password: ''
 }
+
+document.getElementById("btn-signup")
+    .addEventListener('click', function (event) {
+        event.preventDefault();
+        let users = JSON.parse(localStorage.getItem('users')) ?? []
+
+        let registerUsername = document.getElementById('registerUsername')
+        let registerPassword = document.getElementById('registerPassword')
+
+        let newuser = {
+            id: users.length,
+            userName: registerUsername.value,
+            password: registerPassword.value
+        }
+        users.push(newuser)
+
+        localStorage.setItem('users', JSON.stringify(users))
+
+    })
+
+document.getElementById('btn-login')
+    .addEventListener('click', function (event) {
+        event.preventDefault();
+        let loginName = document.getElementById('loginName')
+        let loginPassword = document.getElementById('loginPassword')
+
+        let users = JSON.parse(localStorage.getItem('users')) ?? []
+
+        for (var i = 0; i < users.length; i++) {
+            if (loginName.value === users[i].userName) {
+                if (loginPassword.value === users[i].password) {
+
+                    userNow.id = users[i].id;
+                    userNow.userName = users[i].userName;
+                    userNow.password = users[i].password;
+                    window.location.href="/Project/Project.html"
+                } else {
+                    alert('Password khong chinh xac!')
+                }
+            } else {
+                alert('User khong ton tai!')
+            }
+        }
+
+    })
+
+

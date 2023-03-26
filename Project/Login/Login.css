@@ -1,76 +1,76 @@
-body{
-    background-color: black;
-}
-form{
-    background-color: white;
+*{
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
-    width: 350px;
-    margin: 100px auto 0 ;
-    padding: 40px;
-    border-radius: 3px;
+}
+
+body{
+    padding-top: 10%;
+}
+.li-su{
+    margin: 0 35%;
+}
+.container{
+    display: flex;
+}
+
+.list{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: bisque;
+    width: 65%;
+    
+}
+
+.item{
+    width: fit-content;
+    height: fit-content;
+    border-radius: 16px;
+    padding: 12px;
+    margin: 16px;
+    display: flex;
+    box-shadow: 0 0 3px 0px;
+}
+
+.item .image{
+    width: 100px;
+}
+
+.item .inforItem{
+    padding: 12px 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    justify-content: center;
-    border-radius: 4%;
 }
 
-form h1{
-    margin-top: 15px;
-    color: black;
-    box-sizing: border-box;
-    padding: 20px;
-    font-family: Arial;
-    text-align: center;
+.item .inforItem .name{
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
 }
-form p{
-    font-family: Arial;
-    color: black;
+
+.item .inforItem .price{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
 }
-input{
-    margin: 0px 50px;
-    margin-left: 35px;
-    width: 200px;
+.item .inforItem .price::after{
+    content: '$';
+}
+
+.item .inforItem .addToCart, .btn_del{
     border: none;
-    padding: 10px 0;
-    border-bottom: solid black;
-    background: linear-gradient(
-        to bottom,
-        black,
-        black 4%
-    );
-    background-position: -200px 0;
-    background-size: 200px 100%;
-    background-repeat: no-repeat;
-    color: black;
+    background-color: rgb(202, 202, 202);
+    padding: 8px;
+    border-radius: 16px;
 }
-button{
-    border: none;
-    background-color: black;
-    cursor: pointer;
-    border-radius: 3px;
-    color: white;
-    margin-left: 35px;
-    margin-top: 20px;
-    width: 200px;
-    left: 20px;
-    height: 30px;
+
+.item .inforItem .addToCart:hover, .btn_del:hover{
+    background-color: rgb(255, 181, 32);
+    box-shadow: 0 0 3px 0px;
 }
-button:hover{
-    background-color: gray;
-}
-a{
-    padding: 15px 70px;
-    left: 10px;
-    text-decoration: none;
-    color: white;
-}
-/* #but2{
-    display: none;
-} */
-#f2{
-    display: flex;
-}
-#f1{
-    display: flex;
+
+.cart{
+    width: 35%;
+    background-color: aquamarine;
 }

@@ -1,0 +1,170 @@
+*{
+    margin: 0px;
+    padding: auto;
+    box-sizing: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    height: auto;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    position: relative;
+    width: auto;
+    height: auto;
+}
+#ul1{
+    background-color: black;
+    padding-left: 0px;
+    display: flex;
+    justify-content: start;
+    width: 58%;
+    position: fixed;
+    left: 0px;
+}
+#ul2{
+    background-color: black;
+    padding-left: 0px;
+    display: flex;
+    justify-content: end;
+    width: 42%;
+    position: fixed;
+    right: 0px;
+}
+li{
+    display: inline;
+}
+li a{
+    display: inline-block;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    font-family: Arial;
+    font-weight: bold;   
+}
+li a:hover{
+    background-color: white;
+    color: black;
+}
+.Content{
+    position: relative;
+    top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Title{
+    font-size: 80px;
+    color: black;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+}
+.Cus_space{
+    width: 500px;
+    height: 500px;
+    border: 2px solid;
+}
+.setting{
+    border: 2px solid;
+    width: auto;
+    height: auto;
+    padding:  10px;
+}
+.Cake{
+    height: 500px;
+    width: 500px;
+    background-color: white;
+    border: 2px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cake_color{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+}
+.set_color{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0px 2px
+}
+#pink{
+    background-color: pink;
+}
+#red{
+    background-color: red;
+}
+#purple{
+    background-color: blueviolet;
+}
+#blue{
+    background-color: blue;
+}
+#green{
+    background-color: greenyellow;
+}
+#yellow{
+    background-color: yellow;
+}
+.cake_shape{
+    display: flex;
+    flex-direction: row;
+}
+.shape_choice{
+    width: 50%;
+    text-align: center;
+    border: 2px solid;
+    margin: 4px;
+}
+#con1{
+    display: flex;
+    flex-direction: row;
+}
+#con2{
+    display: flex;
+    flex-direction: row;
+}
+.topping{
+    width: 120px;
+    height: 120px;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/590/590685.png);
+    background-size: contain;
+    position: relative;
+}
+.con{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+.cake_topping{
+    display: flex;
+    flex-direction: column;
+}
+.cake_choice{
+    width: 100%;
+    text-align: center;
+    border: 2px solid;
+    margin: 4px;
+}
+.text{
+    width: 100;
+    height: 100;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    position: relative;
+    left: 10px;
+    text-align: center
+}
+#set_text{
+    width: 96%;
+    height: 20px;
+    margin-top: 4px;
+    font-size: large;
+}

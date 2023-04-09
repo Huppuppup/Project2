@@ -1,0 +1,186 @@
+*{
+    margin: 0px;
+    padding: auto;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+body{
+    height: auto;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    position: relative;
+    width: auto;
+    height: auto;
+}
+#ul1{
+    background-color: black;
+    padding-left: 0px;
+    display: flex;
+    justify-content: start;
+    width: 58%;
+    position: fixed;
+    left: 0px;
+}
+#ul2{
+    background-color: black;
+    padding-left: 0px;
+    display: flex;
+    justify-content: end;
+    width: 42%;
+    position: fixed;
+    right: 0px;
+}
+li{
+    display: inline;
+}
+li a{
+    display: inline-block;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    font-family: Arial;
+    font-weight: bold;   
+}
+li a:hover{
+    background-color: white;
+    color: black;
+}
+.ul3{
+    padding-right: 20px;
+}
+
+#ul3 li{
+    margin: 0px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 58px;
+}
+.Cake_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 140px 20px 140px;
+}
+
+.cake{
+    width: 26%;
+    height: auto;
+    border: 2px;
+    margin: 20px 0px 20px 0px;
+    border-style: solid;
+}
+.Cake_content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    color: black;
+    align-items: center;
+}
+.Cake_IMG{
+    width: 100%;
+
+}
+.Cake_text{
+    margin: 10px 6px;
+}
+.Cake_name{
+    font-weight: bold;
+}
+.Cake_buy{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 120px;
+    height: auto;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.slide_show{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.banner{
+    width: 100%;
+    height: auto;
+}
+.picture{
+    width: 100%;
+    height: auto;
+}
+.arrow{
+    width: auto;
+    height: auto;
+    background-color: gainsboro;
+    border-radius: 50%;
+    padding: 0% 30% 0% 30%;
+}
+#login{
+    display: none;
+}
+.Footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    padding: 40px 480px;
+}
+.fa {
+    padding-top: 7px;
+    padding-left: 1px;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: white;
+    color: #1DA1F2;
+}
+.fa-instagram {
+    background: white;
+    color: #833AB4;
+}
+.fa-google {
+    background: white;
+    color: #DB4437;
+}
+.fa-pinterest {
+    background: #E60023;
+    color: white;
+}
+.fa-reddit {
+    background: #ff4500;
+    color: white;
+}
+  
+
+
+
+
+
+
+
+
+
+
